@@ -1,0 +1,81 @@
+.form_wp_osm {
+	background-color: #fff;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+.form_wp_osm label {
+
+	display: inline-block;
+
+	width: 80px;
+
+	vertical-align: top;
+
+}
+
+.form_wp_osm label.small_label {
+	width: 32px;
+}
+
+.form_wp_osm input[type=text] {
+
+	width: 200px;
+
+}
+
+.form_wp_osm .marker_edit {
+	display: none;
+}
+
+#wp_osm_container {
+	float: left;
+	width: 66%;
+}
+
+#wp_osm_markers {
+	float: left;
+	margin-left: 10px;
+	width: 30%;
+}
+
+.marker {
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.marker img {
+	cursor: pointer;
+	vertical-align: middle;
+}
+
+.marker .marker_edit {
+	background-color: #ddd;
+	padding: 10px;
+}
+
+.form_wp_osm input[type="text"],
+.form_wp_osm textarea {
+	border: 1px solid #444;
+}
+
+.form_wp_osm input[type="submit"] {
+	background-color: #444;
+	border: none;
+	color: #fff;
+}
+
+#wp_osm image {
+	cursor: pointer;
+}
+
+.wp_osm {
+	background-color: #fff;
+	margin-top: 10px;
+	padding: 10px;
+	width: 300px;
+}
+
+.wp_osm h3 {
+	margin-top: 10px;
+}

@@ -1,0 +1,51 @@
+<div class="row">
+    <div class="col-md-8">
+      <article>       
+          <div class="noticias-actuales">
+            <?php if (have_posts()) :  while (have_posts()) : the_post(); ?> 
+            <div class="new-home">
+            <div class="categoria-entrada"><?php the_tags( ' ', ', ', '<br />' ); ?> </div>
+            <div class="titulo-entrada"><h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2></div>
+            <div class="img-thumb">
+                <?php 
+                    if ( has_post_thumbnail() ) { 
+                                the_post_thumbnail( 'full', array( 'class' => 'img-responsive' ) );
+                               }
+                 ?>  
+               </div>
+            <div class="texto-post"><?php the_excerpt(); ?></div>
+            <div><a href="<?php the_permalink(); ?>" class="btn-more">Continuar leyendo &#8594</a></div>
+              
+               <div class="more-date">
+                  <ul>
+                    <li><?php comments_number( ); ?></li>
+                    <li>Publicado el <?php the_time('j/m/Y') ?></li>
+                    <li>Por: <?php the_author(); ?></li>
+                  </ul>
+               </div>
+            </div>
+            <?php endwhile; else: ?>                
+          <?php endif; ?>    
+              <section>
+              <?php if ( have_posts() ) : ?>
+                <!-- Main loop. -->
+                <?php while ( have_posts() ) : the_post();  ?>
+                     <!-- Tus funciones -->
+                <?php endwhile; ?>
+
+                <div class="nav-previous alignleft"><?php next_posts_link( 'Noticas Antiguas' ); ?></div>
+                <div class="nav-next alignright"><?php previous_posts_link( 'Noticas Recientes' ); ?></div>
+            <?php endif; ?>
+    </section>       
+         </div>
+      </article>
+    </div>
+    <div class="col-md-4">
+     <div class="block-wi">
+        <?php if( is_active_sidebar('widget-bar') ) { // Verificamos si el área "barra-lateral" está activa
+              dynamic_sidebar( 'widget-bar' ); // Y si está activa, la cargamos acá
+        } //Aquí termina la verificación ?> 
+
+      </div>
+    </div>
+  </div>

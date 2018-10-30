@@ -1,0 +1,10 @@
+.wp_osm image {
+	cursor: pointer;
+}
+.wp_osm img {
+	max-width: none !important;
+}
+
+.wp_osm .olControlAttribution {
+	bottom: 0em !important;
+}

@@ -1,0 +1,270 @@
+/*
+Theme Name:JRKtheme
+Theme URL:http://jrk.co
+Author URL:https://twitter.com/hfabra
+Description: Tema para sitio jrk
+Author: Heiman Fabra
+Version:1.0
+*/
+$textoNegro:#1b1a1b;
+body{
+    font-family: 'Anton', sans-serif;
+}
+header{
+    background-image: url("images/bgheader.png");
+    background-color: #f8cc14;
+    max-height: 75px;
+}
+
+.jkr-menu-header ul li{
+    list-style: none;
+}
+.jkr-menu-header ul li a{
+    font-size: 1.1em;
+    color: #171717;
+    font-weight: bold;
+}
+#nav-home{
+    background-color: #f0f0ef;
+}
+nav ul{
+    padding: 0;
+    margin: 0;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 .5em;
+    padding: .9em .7em;
+}
+nav ul li:first-child{
+    margin-left: 0;
+}
+nav ul li:last-child{
+    float: right;
+}
+.menu-item-23{
+    background-color: #270057;
+}
+.menu-item-23 a{
+    color: #ffffff;
+}
+nav ul li a{
+    text-transform: uppercase;
+    color: #0c0c0c;
+    font-size: 1,5em;
+    font-weight: 600;
+}
+footer nav ul li a{
+    color: #f0f0f0;
+}
+.current_page_item{
+    background-color: #dbdad9;
+}
+footer .current_page_item a{
+    color: #171717!important;
+}
+.slider .btn{
+    border-radius: 2rem;
+}
+.img-silder{
+    width: 100%;
+    height: auto;
+}
+.title-h2{
+    color: $textoNegro;
+    text-transform: uppercase;
+}
+.line-title{
+    border-bottom: solid 1px #e5e5e5;
+}
+.time-line{
+    background-color: #f8f8f8;
+}
+.item-tl{
+}
+.bg-items{
+    background-color:#ffffff;
+}
+.titulo-entrada a{
+    color: #1b1a1b;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.texto-post{
+    color: #565656;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+.categoria-entrada a{
+    color: #8d8d8d;
+    font-size: 1em;
+    padding: .5em;
+}
+.more-date h3{
+    color: #1b1a1b;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+.more-date a{
+    font-size: .9em;
+    padding-left: .7em;
+}
+.btn-more{
+    padding: 1em;
+    background-color: #ffe507;
+    color: #1b1a1b;
+    float: right;
+    text-transform: uppercase;
+}
+.type-item{
+    position: absolute;
+    top: 0%;
+    border: solid 1px #ffffff;
+    text-align: center;
+    margin-left: 1em;
+    margin-top: 1em;
+    border-radius: 2em;
+    width:120px;
+}
+.img-thumb img{
+    -webkit-transition: all .3s ease;
+    -webkit-transform: scale(1, 1);
+}
+.img-thumb img:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50); /* For IE8 and earlier */
+    -webkit-transition: all .3s ease;
+    -webkit-transform: scale(1.03, 1.03);
+}
+
+.type-item ul{
+    padding: 0;
+    margin: 0;
+}
+.type-item ul li{
+    list-style: none;
+    padding: .4em;
+}
+.type-item ul li a{
+    color: #ffffff;
+    text-transform: uppercase;
+}
+.menu-footer{
+    background-color: #270057;
+}
+.info-footer{
+    background-color: #000000;
+    color: #818181;
+}
+.menu-link-social a{
+    text-transform: uppercase;
+    color: #818181;
+}
+.portada-grupo{
+    max-height: 299px;
+    background-image: url("images/portada-grupo.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+}
+.menu-grupo{
+   
+}
+.menu-grupo a{
+    color: #ffffff;
+    text-transform: uppercase;
+    padding-right: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.menu-grupo a:hover{
+    color: #d9ff04;
+}
+/************ WORDPRESS CORE ************/
+.alignnone {
+    margin: 5px 20px 20px 0;
+}
+ 
+.aligncenter,
+div.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+ 
+.alignright {
+    float:right;
+    margin: 5px 0 20px 20px;
+}
+ 
+.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+ 
+.aligncenter {
+    display: block;
+    margin: 5px auto 5px auto;
+}
+ 
+a img.alignright {
+    float: right;
+    margin: 5px 0 20px 20px;
+}
+ 
+a img.alignnone {
+    margin: 5px 20px 20px 0;
+}
+ 
+a img.alignleft {
+    float: left;
+    margin: 5px 20px 20px 0;
+}
+ 
+a img.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+ 
+.wp-caption {
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    max-width: 96%;
+    padding: 5px 3px 10px;
+    text-align: center;
+}
+ 
+.wp-caption.alignnone {
+    margin: 5px 20px 20px 0;
+}
+ 
+.wp-caption.alignleft {
+    margin: 5px 20px 20px 0;
+}
+ 
+.wp-caption.alignright {
+    margin: 5px 0 20px 20px;
+}
+ 
+.wp-caption img {
+    border: 0 none;
+    height: auto;
+    margin: 0;
+    max-width: 98.5%;
+    padding: 0;
+    width: auto;
+}
+ 
+.wp-caption p.wp-caption-text {
+    font-size: 11px;
+    line-height: 17px;
+    margin: 0;
+    padding: 0 4px 5px;
+}
+ 
+.gallery-caption {
+    font-size: 0.8em;
+}
+a{color: #f15438;}
+a:hover{color: #f15438; text-decoration: underline;}
